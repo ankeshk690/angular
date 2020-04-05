@@ -1,0 +1,23 @@
+<div class="container">
+<table class="table">
+<thead>
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>company</th>
+        <th>TargetDate</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let todo of todos"> 
+        <td>{{todo.id}}</td>
+        <td>{{todo.name}}</td>
+        <td>{{todo.company}}</td>
+        <td>{{todo.TargetDate | date |uppercase}}</td>
+    </tr>
+</tbody>
+
+
+
+    </table>
+</div>
